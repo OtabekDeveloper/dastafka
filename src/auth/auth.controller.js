@@ -3,7 +3,7 @@ async function Login(req , res){
     try {   
         let user = await userModel.findOne({
             username : req.body.username,
-            tel : req.body.tel
+            password : req.body.password
         })
         if(user){
             return res.status(200).send(user)
