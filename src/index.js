@@ -19,7 +19,7 @@ mongoose
     console.error(`Error connecting to the database. \n${err}`);
   });
 
-app.use("/", appRouter);
+app.use("/api", appRouter);
 
 app.listen(5000, () => {
   console.log(`${5000}'s port is working`);
